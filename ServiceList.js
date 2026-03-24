@@ -5,7 +5,7 @@ function ServiceList() {
 
   useEffect(() => {
     // פנייה לשרת ה-Node החדש שהקמת
-    fetch(`${process.env.REACT_APP_NODE_API_URL}/services`)
+fetch(`${process.env.REACT_APP_NODE_API_URL}/api/services`)
       .then(res => res.json())
       //.then(data => setServices(data))
       .then(data => {
